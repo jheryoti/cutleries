@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Location Access | The Culinary Curator</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary": "#003737",
+              "secondary-container": "#474747",
+              "surface-container-low": "#1c1b1b",
+              "on-secondary-fixed": "#1b1c1c",
+              "surface-container-high": "#2a2a2a",
+              "tertiary-fixed": "#ffdbd1",
+              "on-secondary-fixed-variant": "#474747",
+              "inverse-surface": "#e5e2e1",
+              "on-error": "#690005",
+              "on-secondary-container": "#b6b5b4",
+              "primary-fixed": "#93f2f2",
+              "error-container": "#93000a",
+              "surface-bright": "#393939",
+              "secondary-fixed": "#e4e2e1",
+              "primary": "#76d6d5",
+              "on-background": "#e5e2e1",
+              "secondary-fixed-dim": "#c8c6c6",
+              "on-primary-fixed-variant": "#004f4f",
+              "surface": "#131313",
+              "error": "#ffb4ab",
+              "on-primary-fixed": "#002020",
+              "surface-container-lowest": "#0e0e0e",
+              "surface-variant": "#353534",
+              "tertiary": "#ffb5a0",
+              "primary-fixed-dim": "#76d6d5",
+              "on-tertiary-fixed-variant": "#872000",
+              "primary-container": "#008080",
+              "outline-variant": "#3e4949",
+              "on-primary-container": "#e3fffe",
+              "tertiary-fixed-dim": "#ffb5a0",
+              "on-surface-variant": "#bdc9c8",
+              "background": "#131313",
+              "outline": "#879392",
+              "surface-tint": "#76d6d5",
+              "on-secondary": "#303030",
+              "inverse-primary": "#006a6a",
+              "on-surface": "#e5e2e1",
+              "secondary": "#c8c6c6",
+              "inverse-on-surface": "#313030",
+              "surface-container-highest": "#353534",
+              "surface-container": "#201f1f",
+              "tertiary-container": "#d53800",
+              "on-error-container": "#ffdad6",
+              "on-tertiary-fixed": "#3b0900",
+              "surface-dim": "#131313",
+              "on-tertiary": "#601400",
+              "on-tertiary-container": "#fff8f6"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        .editorial-gradient {
+            background: radial-gradient(circle at top right, rgba(0, 128, 128, 0.15), transparent 40%),
+                        radial-gradient(circle at bottom left, rgba(118, 214, 213, 0.05), transparent 50%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary/30 min-h-screen flex flex-col">
+<!-- Permission Shell (Navigation Suppressed for focused journey) -->
+<main class="flex-grow flex flex-col items-center justify-center px-6 relative overflow-hidden editorial-gradient">
+<!-- Background Visual Element (Asymmetric Depth) -->
+<div class="absolute top-[-10%] left-[-10%] w-[60%] h-[60%] bg-primary/5 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-[-5%] right-[-5%] w-[40%] h-[40%] bg-tertiary-container/5 rounded-full blur-[100px]"></div>
+<!-- Content Canvas -->
+<div class="w-full max-w-md flex flex-col items-center text-center z-10">
+<!-- Hero Imagery: Editorial Bento Style -->
+<div class="grid grid-cols-12 gap-4 w-full mb-12">
+<div class="col-span-8 h-64 rounded-xl overflow-hidden shadow-2xl relative">
+<img alt="Fine dining table" class="w-full h-full object-cover" data-alt="overhead shot of a luxury restaurant table with elegant plates of gourmet food and moody ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoiDZB7tNKwQ8zOI8I1CH0A1j_kX5DEJJuj5i96PZqPtUubJAzfUondNAZ7aTW_Ru4vdhwOPTfFDAJB6IcrCppLUjS3niUCze32KUgvU5Qyb8-9fxz3932irv1BOZ1N1xPzWGrTyKxm_4O0HpJiV1obXjbGrG7J5Qx00hm9cK9AeLfCcqfP_hQDesE1sUvdwGGOAmQoZa19W0CjqjNcrdh8hAS7-c9ayS-BWLNbf8M5uhAQ9k1fgRUeiwySDV_5K3uaDAohmM4LMuQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent opacity-60"></div>
+</div>
+<div class="col-span-4 flex flex-col gap-4">
+<div class="h-28 rounded-xl overflow-hidden">
+<img alt="Chef plating" class="w-full h-full object-cover" data-alt="Close up of a professional chef meticulously plating a colorful dish in a dark kitchen environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkj9ohbrcAS7O1UGflXJlWIRvzJnGgwVRlBZ5f6GUzZHGL7_FKTFeutNidbXmeanQRPq563vc8IMwB-OVWfFZyn5rT5Y3rRajxst6piJPxfTa9XSuEPN_zQbfRn5HZ3MFHcOy_hTA9yMYuoGT9wQKaivv-3wzyBbLB6Qv5TH29NS9YphaHQWEdf9tGrDi8MTuFG6d9miJe9A4UHwglU6HLL1Q91pbLBRVQ9oQv56WqmMgAa9Uv_1wwe3Mg7cdUvesSbRHiE-0dsqDF"/>
+</div>
+<div class="h-[8.5rem] rounded-xl bg-primary-container/20 flex items-center justify-center backdrop-blur-md">
+<span class="material-symbols-outlined text-primary text-5xl" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+</div>
+</div>
+<!-- Messaging -->
+<h1 class="font-headline font-extrabold text-4xl tracking-tight text-on-surface mb-4 leading-tight">
+                Discover the <span class="text-primary italic">Best Flavors</span> Near You
+            </h1>
+<p class="font-body text-on-surface-variant text-lg leading-relaxed mb-10 max-w-[85%]">
+                Enable location to find food near you and experience curated local cuisines delivered with precision.
+            </p>
+<!-- CTA Section -->
+<div class="w-full space-y-4">
+<button class="w-full py-5 bg-tertiary-container text-on-tertiary-container font-headline font-bold text-lg rounded-xl shadow-[0_12px_32px_rgba(0,0,0,0.12)] active:scale-95 transition-all duration-200">
+                    Allow Location Access
+                </button>
+<button class="w-full py-4 text-on-surface-variant font-label text-sm tracking-[0.05em] uppercase hover:text-primary transition-colors duration-200">
+                    Enter Address Manually
+                </button>
+</div>
+<!-- Status Pulsar Indicator -->
+<div class="mt-12 flex items-center gap-2 px-4 py-2 bg-surface-container-high rounded-full border border-outline-variant/15">
+<div class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</div>
+<span class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Live curation active in Lagos &amp; Abuja</span>
+</div>
+</div>
+</main>
+<!-- Content-Focused Footer -->
+<footer class="p-8 flex justify-center items-center z-10">
+<p class="font-label text-[10px] text-outline tracking-widest uppercase opacity-50">
+            Privacy First Architecture © 2024
+        </p>
+</footer>
+</body></html>

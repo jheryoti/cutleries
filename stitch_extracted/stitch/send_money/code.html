@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Transfer - High-End Editorial Delivery</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary": "#003737",
+              "secondary-container": "#474747",
+              "surface-container-low": "#1c1b1b",
+              "on-secondary-fixed": "#1b1c1c",
+              "surface-container-high": "#2a2a2a",
+              "tertiary-fixed": "#ffdbd1",
+              "on-secondary-fixed-variant": "#474747",
+              "inverse-surface": "#e5e2e1",
+              "on-error": "#690005",
+              "on-secondary-container": "#b6b5b4",
+              "primary-fixed": "#93f2f2",
+              "error-container": "#93000a",
+              "surface-bright": "#393939",
+              "secondary-fixed": "#e4e2e1",
+              "primary": "#76d6d5",
+              "on-background": "#e5e2e1",
+              "secondary-fixed-dim": "#c8c6c6",
+              "on-primary-fixed-variant": "#004f4f",
+              "surface": "#131313",
+              "error": "#ffb4ab",
+              "on-primary-fixed": "#002020",
+              "surface-container-lowest": "#0e0e0e",
+              "surface-variant": "#353534",
+              "tertiary": "#ffb5a0",
+              "primary-fixed-dim": "#76d6d5",
+              "on-tertiary-fixed-variant": "#872000",
+              "primary-container": "#008080",
+              "outline-variant": "#3e4949",
+              "on-primary-container": "#e3fffe",
+              "tertiary-fixed-dim": "#ffb5a0",
+              "on-surface-variant": "#bdc9c8",
+              "background": "#131313",
+              "outline": "#879392",
+              "surface-tint": "#76d6d5",
+              "on-secondary": "#303030",
+              "inverse-primary": "#006a6a",
+              "on-surface": "#e5e2e1",
+              "secondary": "#c8c6c6",
+              "inverse-on-surface": "#313030",
+              "surface-container-highest": "#353534",
+              "surface-container": "#201f1f",
+              "tertiary-container": "#d53800",
+              "on-error-container": "#ffdad6",
+              "on-tertiary-fixed": "#3b0900",
+              "surface-dim": "#131313",
+              "on-tertiary": "#601400",
+              "on-tertiary-container": "#fff8f6"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .glass-panel {
+        background: rgba(118, 214, 213, 0.08);
+        backdrop-filter: blur(24px);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-primary/30 min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#131313]/80 backdrop-blur-xl">
+<div class="flex justify-between items-center px-6 py-4 w-full max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-3">
+<button class="active:scale-95 duration-200 text-[#76d6d5]">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="font-headline font-bold tracking-tight text-lg text-on-surface">Send Money</h1>
+</div>
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container-high border border-outline-variant/20">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="Close-up studio portrait of a sophisticated man with dark skin, soft ambient lighting, high-end editorial photography style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGHJUpJJHHnoe5PJEb7kEWCGl5cyKo_5z18MgNG2LJuOH401soE6c9ijyh7_hzKRZNeM-wd0cQobuN8IGlXLfcd2OGMziOMW0C_YuxB1XjluNsz77-FJN2_5mTfChLJ9JVIj6Yez6ldEtL1cOgyRFK6RCC20tBOfD7XWNXYjwqBCNmkkNk0KBQtAEJMByXeYnCBobKHC0uxVvuw5Hsqik6j_-UIbvAbZ8sNimmmK-mM9j95KxomiBI27f8UHmxS5OXgbgaa9h1ToHQ"/>
+</div>
+</div>
+</header>
+<main class="flex-grow pt-24 pb-32 px-6 max-w-md mx-auto w-full">
+<!-- Transfer Interface -->
+<div class="space-y-10">
+<!-- Recipient Selection Section -->
+<section>
+<label class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-4 block">Recipient Information</label>
+<div class="relative group">
+<div class="absolute inset-y-0 left-4 flex items-center pointer-events-none text-primary/60 group-focus-within:text-primary transition-colors">
+<span class="material-symbols-outlined">alternate_email</span>
+</div>
+<input class="w-full bg-surface-container-highest border-none rounded-xl py-5 pl-12 pr-4 text-on-surface placeholder:text-on-surface-variant/50 focus:ring-1 focus:ring-primary/40 transition-all font-medium" placeholder="Recipient Username" type="text" value="Tayo_Design"/>
+</div>
+<!-- Quick Selection Suggestion -->
+<div class="mt-6 flex gap-3 overflow-x-auto no-scrollbar py-2">
+<div class="flex-shrink-0 flex flex-col items-center gap-2">
+<div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20">
+<span class="material-symbols-outlined text-primary">add</span>
+</div>
+<span class="text-[10px] font-label uppercase tracking-tighter text-on-surface-variant">New</span>
+</div>
+<div class="flex-shrink-0 flex flex-col items-center gap-2">
+<div class="w-14 h-14 rounded-full overflow-hidden border-2 border-primary">
+<img alt="Recent Recipient" class="w-full h-full object-cover" data-alt="Portrait of a young woman with a vibrant smile, natural lighting, warm skin tones, professional lifestyle photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAf0AOXx2ZCd2nqsvbSI-tFfyQ1WVP6H8XkwpJNEfmpBIgOz_5Gm8dSVeSuYXSbRb1LqelhqKcWL1nINwGsdskdvaUWo8JDagErZXgbJafPv5bWJSFnrfIld6x_Acqmkz5YdVDv2io4k-xiGjriSwVPJsgdVesFXjFJtyMExDp37uEOd17Y636z5h4vve-81HhieWCupZQXHH_ZD0O59BJtlyR2sR0CKkOEatPM6t7ZYbJtdR5qtUA0xEPllekfZZxC2s8FAKKPUjd7"/>
+</div>
+<span class="text-[10px] font-label uppercase tracking-tighter text-primary font-bold">@Tayo</span>
+</div>
+<div class="flex-shrink-0 flex flex-col items-center gap-2 opacity-60">
+<div class="w-14 h-14 rounded-full overflow-hidden">
+<img alt="Recent Recipient" class="w-full h-full object-cover" data-alt="Portrait of a man in professional attire, soft grey background, clean and minimal editorial aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5NtceMKge7TLuv3nJ1xLkuFvtzVR0_333LyHtoKvPQuMoIQ6l_h5MSwAROvgRZv18mk7Ns-L3TvHDvXSiitp9QUR8azBCEjQrzHOyPFh7YFYBSZcbEXCiDtPMmp7z2BfzsnXfJ5HLaIyZMkQe2OisFZ7lpoAXtmDtwtmZTWe35gu9nTkETFMtG8STN4I73aftG0G4LpLERvVclPJTFyMfrZKdWRKX61RsDTwITs7UkeEf4ksaER_2gQ45X1dHkE_AFNphPVmULf32"/>
+</div>
+<span class="text-[10px] font-label uppercase tracking-tighter text-on-surface-variant">@Bolaji</span>
+</div>
+</div>
+</section>
+<!-- Amount Section -->
+<section class="flex flex-col items-center justify-center space-y-4">
+<label class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Transfer Amount</label>
+<div class="flex items-baseline gap-2 group">
+<span class="text-4xl font-headline font-bold text-primary/40 group-focus-within:text-primary transition-colors">₦</span>
+<input class="bg-transparent border-none text-6xl font-headline font-extrabold text-on-surface focus:ring-0 p-0 w-48 text-center placeholder:text-surface-container-highest" placeholder="0" type="number" value="2000"/>
+</div>
+<div class="px-4 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant text-sm font-medium">
+                    Available: ₦145,200.00
+                </div>
+</section>
+<!-- Action Button -->
+<section class="pt-6">
+<button class="w-full bg-primary py-5 rounded-xl text-on-primary font-headline font-extrabold text-lg shadow-[0_12px_32px_rgba(0,0,0,0.12)] active:scale-95 transition-all duration-200 flex items-center justify-center gap-3">
+<span>Confirm Transfer</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">send</span>
+</button>
+<p class="text-center mt-6 text-on-surface-variant/60 text-xs px-8 leading-relaxed">
+                    By confirming, you authorize the immediate transfer of funds. This action cannot be undone.
+                </p>
+</section>
+</div>
+</main>
+<!-- Success Screen Overlay (Hidden by Default/Mocked here for visual) -->
+<div class="fixed inset-0 z-[100] bg-surface flex items-center justify-center p-6 hidden">
+<div class="w-full max-w-sm space-y-12 text-center">
+<div class="relative mx-auto w-32 h-32 flex items-center justify-center">
+<!-- Status Pulsar Background -->
+<div class="absolute inset-0 bg-primary/20 rounded-full animate-ping"></div>
+<div class="relative w-24 h-24 bg-primary rounded-full flex items-center justify-center shadow-[0_0_40px_rgba(118,214,213,0.3)]">
+<span class="material-symbols-outlined text-on-primary text-5xl" style="font-variation-settings: 'FILL' 1; font-weight: 700;">check_circle</span>
+</div>
+</div>
+<div class="space-y-4">
+<h2 class="text-4xl font-headline font-extrabold tracking-tight text-on-surface">Payment Successful</h2>
+<p class="text-xl font-body text-primary font-semibold">₦2,000 sent to @Tayo_Design</p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-2xl space-y-4 text-left border border-outline-variant/10">
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant text-sm">Transaction ID</span>
+<span class="text-on-surface font-mono text-xs">#TRX-9921-00X</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant text-sm">Date</span>
+<span class="text-on-surface text-sm">24 Oct, 2023 • 14:22</span>
+</div>
+</div>
+<button class="w-full bg-surface-container-highest py-4 rounded-xl text-on-surface font-headline font-bold active:scale-95 transition-all">
+                Back to Wallet
+            </button>
+</div>
+</div>
+<!-- BottomNavBar (Suppressed for focused task, but kept logic for active state) -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-[#131313]/90 backdrop-blur-2xl z-50 rounded-t-[24px] shadow-[0_-4px_20px_rgba(0,0,0,0.4)]">
+<a class="flex flex-col items-center justify-center text-gray-500 hover:text-[#76d6d5] transition-colors active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined">home_storage</span>
+<span class="font-['Inter'] font-medium text-[10px] tracking-widest uppercase mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-500 hover:text-[#76d6d5] transition-colors active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined">receipt_long</span>
+<span class="font-['Inter'] font-medium text-[10px] tracking-widest uppercase mt-1">Orders</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#76d6d5] bg-[#008080]/10 rounded-2xl px-4 py-1.5 active:scale-90 transition-transform duration-150" href="#">
+<span class="material-symbols-outlined">account_balance_wallet</span>
+<span class="font-['Inter'] font-medium text-[10px] tracking-widest uppercase mt-1">Wallet</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-500 hover:text-[#76d6d5] transition-colors active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-['Inter'] font-medium text-[10px] tracking-widest uppercase mt-1">Profile</span>
+</a>
+</nav>
+<!-- Success Screen Presentation (Using a persistent layout block to show what happens next) -->
+<div class="hidden">
+<!-- Successful State Content to be rendered dynamically -->
+<p>₦2,000 sent to @Tayo_Design</p>
+</div>
+</body></html>

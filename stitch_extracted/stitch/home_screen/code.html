@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Culinary Curator - Lagos, NG</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary": "#003737",
+              "secondary-container": "#474747",
+              "surface-container-low": "#1c1b1b",
+              "on-secondary-fixed": "#1b1c1c",
+              "surface-container-high": "#2a2a2a",
+              "tertiary-fixed": "#ffdbd1",
+              "on-secondary-fixed-variant": "#474747",
+              "inverse-surface": "#e5e2e1",
+              "on-error": "#690005",
+              "on-secondary-container": "#b6b5b4",
+              "primary-fixed": "#93f2f2",
+              "error-container": "#93000a",
+              "surface-bright": "#393939",
+              "secondary-fixed": "#e4e2e1",
+              "primary": "#76d6d5",
+              "on-background": "#e5e2e1",
+              "secondary-fixed-dim": "#c8c6c6",
+              "on-primary-fixed-variant": "#004f4f",
+              "surface": "#131313",
+              "error": "#ffb4ab",
+              "on-primary-fixed": "#002020",
+              "surface-container-lowest": "#0e0e0e",
+              "surface-variant": "#353534",
+              "tertiary": "#ffb5a0",
+              "primary-fixed-dim": "#76d6d5",
+              "on-tertiary-fixed-variant": "#872000",
+              "primary-container": "#008080",
+              "outline-variant": "#3e4949",
+              "on-primary-container": "#e3fffe",
+              "tertiary-fixed-dim": "#ffb5a0",
+              "on-surface-variant": "#bdc9c8",
+              "background": "#131313",
+              "outline": "#879392",
+              "surface-tint": "#76d6d5",
+              "on-secondary": "#303030",
+              "inverse-primary": "#006a6a",
+              "on-surface": "#e5e2e1",
+              "secondary": "#c8c6c6",
+              "inverse-on-surface": "#313030",
+              "surface-container-highest": "#353534",
+              "surface-container": "#201f1f",
+              "tertiary-container": "#d53800",
+              "on-error-container": "#ffdad6",
+              "on-tertiary-fixed": "#3b0900",
+              "surface-dim": "#131313",
+              "on-tertiary": "#601400",
+              "on-tertiary-container": "#fff8f6"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary/30">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#131313]/80 backdrop-blur-xl">
+<div class="flex justify-between items-center px-6 py-4 w-full max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#76d6d5]" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<div class="flex flex-col">
+<span class="text-[10px] uppercase tracking-[0.15em] text-on-surface-variant font-label">Deliver to</span>
+<div class="flex items-center gap-1 cursor-pointer active:scale-95 transition-transform">
+<h1 class="font-['Plus_Jakarta_Sans'] font-bold tracking-tight text-lg text-on-surface">Lagos, NG</h1>
+<span class="material-symbols-outlined text-sm text-[#76d6d5]">keyboard_arrow_down</span>
+</div>
+</div>
+</div>
+<div class="h-10 w-10 rounded-full bg-surface-container-highest flex items-center justify-center overflow-hidden border border-outline-variant/20 hover:opacity-80 transition-opacity cursor-pointer">
+<img alt="Profile" class="w-full h-full object-cover" data-alt="close-up portrait of a stylish young man with a confident expression, soft studio lighting on dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtUVKMhKEsRJGQInBEWFYHtfkxSwPfzuTpvGJMdN8livVLN8Gd_s1sJf5BljM7B3gKEVdKSg7QVQDbsVtYgHO_CaS_u9_jL0J402SgpPE2K7ZRsGgYfZE9beoTW8Y6WYpg-ZvWZ8nmzZ8b0JG6aF1Em4yKuBSkEyXmFrfMBoPfLy-eLcLqGJ4Z8mc26dOELAHVmNm2a74a-IyNSyBeXX1ukYjFK2XOXyvTrEFU4a1M2gV5S8FImGTKNtF32HnWDM7TMSQI-W_Mwbah"/>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-screen-2xl mx-auto">
+<!-- Search Bar Section -->
+<section class="mb-10">
+<div class="relative group">
+<div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-on-surface-variant group-focus-within:text-primary transition-colors">search</span>
+</div>
+<input class="w-full bg-surface-container-high border-none rounded-2xl py-4 pl-12 pr-4 text-on-surface placeholder:text-on-surface-variant focus:ring-2 focus:ring-primary/20 transition-all shadow-inner" placeholder="Search for dishes, restaurants..." type="text"/>
+<div class="absolute inset-y-0 right-4 flex items-center">
+<span class="material-symbols-outlined text-primary cursor-pointer">tune</span>
+</div>
+</div>
+</section>
+<!-- Categories Horizontal Scroll -->
+<section class="mb-12">
+<div class="flex items-center justify-between mb-4">
+<h2 class="font-headline font-bold text-xl tracking-tight">Explore Cuisines</h2>
+<span class="text-primary text-sm font-medium cursor-pointer hover:underline">View All</span>
+</div>
+<div class="flex gap-4 overflow-x-auto no-scrollbar -mx-6 px-6">
+<!-- Category Item -->
+<div class="flex-shrink-0 flex flex-col items-center gap-2 group cursor-pointer">
+<div class="w-20 h-20 rounded-2xl bg-surface-container-high flex items-center justify-center group-hover:bg-primary-container transition-all duration-300">
+<span class="material-symbols-outlined text-3xl text-primary group-hover:text-on-primary-container">local_fire_department</span>
+</div>
+<span class="text-xs font-label font-medium text-on-surface-variant uppercase tracking-widest group-hover:text-primary transition-colors">Suya</span>
+</div>
+<!-- Category Item -->
+<div class="flex-shrink-0 flex flex-col items-center gap-2 group cursor-pointer">
+<div class="w-20 h-20 rounded-2xl bg-surface-container-high flex items-center justify-center group-hover:bg-primary-container transition-all duration-300">
+<span class="material-symbols-outlined text-3xl text-primary group-hover:text-on-primary-container">restaurant</span>
+</div>
+<span class="text-xs font-label font-medium text-on-surface-variant uppercase tracking-widest group-hover:text-primary transition-colors">Restaurants</span>
+</div>
+<!-- Category Item -->
+<div class="flex-shrink-0 flex flex-col items-center gap-2 group cursor-pointer">
+<div class="w-20 h-20 rounded-2xl bg-surface-container-high flex items-center justify-center group-hover:bg-primary-container transition-all duration-300">
+<span class="material-symbols-outlined text-3xl text-primary group-hover:text-on-primary-container">local_bar</span>
+</div>
+<span class="text-xs font-label font-medium text-on-surface-variant uppercase tracking-widest group-hover:text-primary transition-colors">Drinks</span>
+</div>
+<!-- Category Item -->
+<div class="flex-shrink-0 flex flex-col items-center gap-2 group cursor-pointer">
+<div class="w-20 h-20 rounded-2xl bg-surface-container-high flex items-center justify-center group-hover:bg-primary-container transition-all duration-300">
+<span class="material-symbols-outlined text-3xl text-primary group-hover:text-on-primary-container">icecream</span>
+</div>
+<span class="text-xs font-label font-medium text-on-surface-variant uppercase tracking-widest group-hover:text-primary transition-colors">Ice Cream</span>
+</div>
+<!-- Category Item -->
+<div class="flex-shrink-0 flex flex-col items-center gap-2 group cursor-pointer">
+<div class="w-20 h-20 rounded-2xl bg-surface-container-high flex items-center justify-center group-hover:bg-primary-container transition-all duration-300">
+<span class="material-symbols-outlined text-3xl text-primary group-hover:text-on-primary-container">cake</span>
+</div>
+<span class="text-xs font-label font-medium text-on-surface-variant uppercase tracking-widest group-hover:text-primary transition-colors">Bakery</span>
+</div>
+</div>
+</section>
+<!-- Main Section: Nearby Vendors -->
+<section>
+<div class="flex items-end justify-between mb-8">
+<div>
+<h2 class="font-headline font-extrabold text-3xl tracking-tighter text-on-surface">Nearby Vendors</h2>
+<p class="text-on-surface-variant text-sm mt-1">Curated selections within your reach</p>
+</div>
+<div class="flex items-center gap-1 px-4 py-2 bg-surface-container-high rounded-full cursor-pointer hover:bg-surface-variant transition-colors">
+<span class="text-xs font-bold uppercase tracking-wider">Filter</span>
+<span class="material-symbols-outlined text-sm">filter_list</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Vendor Card 1 -->
+<article class="group relative flex flex-col bg-surface-container-low rounded-[2rem] overflow-hidden transition-all duration-300 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)]">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="gourmet grilled meat and vegetables arranged artistically on a dark plate, dramatic lighting with steam rising" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrhOiFGiD1Hgp7ySVZAWCEpTzbhTWAo3sjgh-Ai4LXfs7IzXIj3bDjOB8ge37YwfpIkSqWVOVyGlnLsehrMpVfo8YuzO26EUX9rCibkaehe9-_JzWZvUAyGfi8v3xuDycxk9b9KgKJiuDYiLTuvzkywXYVflZAtsTlSC1BwMKrnqE-UAACylXKDI3mrGH0pVEbwnUyDf8AJULgN-QNu6w-1VCjQUsW1jfVgf96nx43d8qUpyUDkoDyeDiy0vp3O4yuT2pFLAT6RBG2"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1.5 bg-primary/90 backdrop-blur-md text-on-primary font-bold text-xs rounded-full uppercase tracking-widest">Featured</span>
+</div>
+<div class="absolute bottom-4 left-4 right-4 flex justify-between items-center">
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-primary shadow-[0_0_8px_#76d6d5]"></div>
+<span class="text-xs text-on-surface font-medium uppercase tracking-wider">Live Tracking</span>
+</div>
+<div class="bg-surface/60 backdrop-blur-md px-3 py-1.5 rounded-full flex items-center gap-1 border border-white/10">
+<span class="material-symbols-outlined text-[#ffb5a0] text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-sm font-bold text-on-surface">4.8</span>
+</div>
+</div>
+</div>
+<div class="p-6 flex flex-col gap-3">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline font-bold text-2xl tracking-tight text-on-surface">The Lagos Grill House</h3>
+<p class="text-on-surface-variant text-sm">Authentic Suya &amp; Afro-Fusion Cuisine</p>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-tertiary transition-colors">favorite</span>
+</div>
+<div class="flex items-center gap-6 mt-2">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-lg">schedule</span>
+<span class="text-sm font-medium text-on-surface">25-35 min</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-lg">distance</span>
+<span class="text-sm font-medium text-on-surface">1.2 km</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-lg">delivery_dining</span>
+<span class="text-sm font-medium text-on-surface">₦800</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Vendor Card 2 -->
+<article class="group relative flex flex-col bg-surface-container-low rounded-[2rem] overflow-hidden transition-all duration-300 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)]">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="stacked artisan beef burger with melting cheese, fresh lettuce, and crispy onions on a dark wooden board, moody atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDG01upzHF9tgU0hO1RFXzLYRyruLI1W_fhvw4mzPknRLzM21-vUNSWM8a4SKzndgcXP6f37bZwVdpSZPznNqai5wRdWj6IfDrOSYTSlZ3uq6yRoNZjDQ95IdQtLJgVOIGdUtA9G0Y7nPDxdJFx5befziB-tKKqjlizrQdajetn05BjuymBx9BtdRs5rbarRZtISU1YUuC7tyFosvecDiHXkLDu-B33NdLS8mufZk0mjdGc0D_ZRom0-KYY9OwuQUp0OAnFTk5TNZZX"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 flex justify-between items-center">
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-primary shadow-[0_0_8px_#76d6d5]"></div>
+<span class="text-xs text-on-surface font-medium uppercase tracking-wider">Fast Delivery</span>
+</div>
+<div class="bg-surface/60 backdrop-blur-md px-3 py-1.5 rounded-full flex items-center gap-1 border border-white/10">
+<span class="material-symbols-outlined text-[#ffb5a0] text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-sm font-bold text-on-surface">4.5</span>
+</div>
+</div>
+</div>
+<div class="p-6 flex flex-col gap-3">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline font-bold text-2xl tracking-tight text-on-surface">Urban Bistro &amp; Co.</h3>
+<p class="text-on-surface-variant text-sm">Gourmet Burgers &amp; Craft Shakes</p>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-tertiary transition-colors">favorite</span>
+</div>
+<div class="flex items-center gap-6 mt-2">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-lg">schedule</span>
+<span class="text-sm font-medium text-on-surface">15-20 min</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-lg">distance</span>
+<span class="text-sm font-medium text-on-surface">2.4 km</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-lg">delivery_dining</span>
+<span class="text-sm font-medium text-on-surface">Free</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Vendor Card 3 (Asymmetric layout hint) -->
+<article class="group relative flex flex-col bg-surface-container-low rounded-[2rem] overflow-hidden transition-all duration-300 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] md:col-span-2">
+<div class="relative h-80 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="vibrant sushi platter with various rolls, nigiri, and ginger, set on a sleek black slate with low-key studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAldqaYQOCapD-3AYQAbMQuCiWZfHSIxgu_4Y33c2trOjc3_y32vNDhX_uQxA5IQ1Y_gZQiJSouISd48VPPmSp7ygKzOh-D--L_yS-Rn-LIR-4kN8r72SuXe1nSS-oYbm8Uarf0JzDjTW55GrRbQbY3z6LSnn-XZYIMx-okKd2lhW3PPlZk7_Y5CkOqVbEvIlwe7yaeekyo-xjA9VtUiktnUuFYeL9oS9eu6Tb5GmahEl0ZyVZ_5fxssL05GV91dl38hBB_WCaNNMFx"/>
+<div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/40 to-transparent"></div>
+<div class="absolute inset-0 flex flex-col justify-center p-12 max-w-lg">
+<div class="bg-tertiary-container text-on-tertiary-container w-fit px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest mb-4">Chef's Special</div>
+<h3 class="font-headline font-extrabold text-4xl tracking-tighter text-on-surface mb-2">Ocean’s Finest Sushi</h3>
+<p class="text-on-surface-variant text-lg mb-6 leading-relaxed">Experience the art of authentic Japanese cuisine, delivered fresh from the coast of Victoria Island.</p>
+<button class="bg-primary text-on-primary w-fit px-8 py-3 rounded-xl font-bold tracking-tight hover:opacity-90 active:scale-95 transition-all">Order Now</button>
+</div>
+</div>
+</article>
+</div>
+</section>
+</main>
+<!-- FAB for quick action -->
+<button class="fixed bottom-28 right-6 w-14 h-14 bg-tertiary-container text-on-tertiary-container rounded-full shadow-2xl flex items-center justify-center active:scale-90 transition-transform z-40 border border-white/5">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">shopping_basket</span>
+</button>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-[#131313]/90 backdrop-blur-2xl z-50 rounded-t-[24px] shadow-[0_-4px_20px_rgba(0,0,0,0.4)]">
+<!-- Home (Active) -->
+<a class="flex flex-col items-center justify-center text-[#76d6d5] bg-[#008080]/10 rounded-2xl px-4 py-1.5 transition-all active:scale-90" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home_storage</span>
+<span class="font-['Inter'] font-medium text-[10px] tracking-widest uppercase mt-1">Home</span>
+</a>
+<!-- Orders -->
+<a class="flex flex-col items-center justify-center text-gray-500 hover:text-[#76d6d5] transition-colors active:scale-90" href="#">
+<span class="material-symbols-outlined">receipt_long</span>
+<span class="font-['Inter'] font-medium text-[10px] tracking-widest uppercase mt-1">Orders</span>
+</a>
+<!-- Wallet -->
+<a class="flex flex-col items-center justify-center text-gray-500 hover:text-[#76d6d5] transition-colors active:scale-90" href="#">
+<span class="material-symbols-outlined">account_balance_wallet</span>
+<span class="font-['Inter'] font-medium text-[10px] tracking-widest uppercase mt-1">Wallet</span>
+</a>
+<!-- Profile -->
+<a class="flex flex-col items-center justify-center text-gray-500 hover:text-[#76d6d5] transition-colors active:scale-90" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-['Inter'] font-medium text-[10px] tracking-widest uppercase mt-1">Profile</span>
+</a>
+</nav>
+</body></html>

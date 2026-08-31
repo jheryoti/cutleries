@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "Cutleries",
+    "slug": "cutleries",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "cutleries",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.jhery.cutleries",
+      "googleServicesFile": "./GoogleService-Info.plist"
+    },
+    "android": {
+      "package": "com.jhery.cutleries",
+      "googleServicesFile": "./google-services.json",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Cutleries needs your location to find nearby restaurants and deliver to you."
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#131313",
+          "dark": {
+            "backgroundColor": "#131313"
+          }
+        }
+      ]
+    ],
+    "experiments": {
+      "reactCompiler": true
+    }
+  }
+}

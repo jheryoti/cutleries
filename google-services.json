@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "509013348934",
+    "project_id": "cutleries",
+    "storage_bucket": "cutleries.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509013348934:android:ca5c9ac16778565a14b047",
+        "android_client_info": {
+          "package_name": "com.jhery.cutleries"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "509013348934-11j6uf43dl63lpttgp04beijm59b9brs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtPFEokyRda7n1SBYpEcWKcj1Jul_RMa8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "509013348934-11j6uf43dl63lpttgp04beijm59b9brs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
